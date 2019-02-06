@@ -1,0 +1,322 @@
+﻿html, body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+::selection{
+    background-color: #444;
+    color: #fff;
+}
+html {
+    font-family: 'Microsoft Yahei light', '微软雅黑 Light';
+    font-size: 16px;
+    overflow-x: hidden;
+    background: white;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+hr {
+    border-style: none none solid;
+    border-width: 1px;
+    color: #000;
+    width: 88%;
+}
+
+.header, .content, .footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.header-content, .footer-content {
+    width: 77%;
+}
+
+.content-body { 
+    width: 75%;
+}
+
+.header {
+    height: 6em;
+}
+
+.header-content {
+    margin: 0 auto;
+    padding: 0.6em 0 0.4em;
+    height: 5em;
+    overflow: hidden;
+}
+
+div.nav-logo {
+    float: left;
+    width: 4em;
+    height: 4em;
+    margin: 0.5em 0;
+}
+
+img.nav-logo {
+    margin: 0;
+    border-radius: 70px;
+    width: 4em;
+    height: 4em
+}
+
+.nav-title {
+    float: left;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0.33em 0;
+}
+
+.nav-intro {
+    float: left;
+    font-size: 0.9em;
+    margin: 2.7em 1em 1.5em;
+}
+
+.nav-list {
+    float: right;
+    font-size: 1.1em;
+    margin: 2em 0;
+    padding: 0;
+}
+
+.nav-list-a {
+    margin-left: 1.1em;
+    padding: 0.1em;
+    text-align: center;
+    display: block;
+    float: left;
+    background-color: #fff;
+    transform: scale(1);
+    transition-duration: 0.45s;
+}
+
+.nav-list-a:hover {
+    transform: scale(1.15);
+    transition-duration: 0.55s;
+}
+
+.nav-list-a:active {
+    color: white;
+    text-shadow: 0 0 1px #000
+}
+
+.hr-head {
+    margin-bottom: 2.5em;
+}
+
+.content-body {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.content-body-post-list {
+    margin: 0 2em;
+    padding: 0;
+}
+
+.post {
+    margin: 0;
+    padding: 0;
+}
+
+.post-title {
+    margin: 0 0 1em;
+    color: #000000c8;
+    display: inline-block;
+}
+
+.index-post-title::after {
+    content: "";
+    height: 2px;
+    background-color: #555;
+    display: block;
+    transform: scaleX(0);
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transform-origin: 0% 0%;
+    transition: transform 0.5s;
+    transition-timing-function: cubic-bezier(.2,1,.3,1);
+}
+
+.index-post-title:hover::after {
+    transform: scaleX(1);
+    transform-origin: 0% 0%;
+    transition-timing-function: cubic-bezier(.2,1,.3,1);
+}
+
+.post-meta {
+    margin: 0 0 2em;
+    font-size: 0.87em;
+    color: #000000a8;
+}
+
+.post-meta-text {
+    margin-right: 0.5em;
+}
+
+.post-meta-tag {
+    text-decoration: underline;
+}
+
+.post-intro {
+    margin: 0 0 2em;
+    padding: 0;
+    font-size: 1em;
+    color: #000000c8;
+}
+
+div.post-read {
+    margin: 0 0 5em;
+}
+
+a.post-read {
+    border-bottom: 0.2em solid;
+}
+
+.pagebox {
+    margin: 0 0 3em;
+    border-top: 1px solid #00000068;
+}
+
+.pagebox-list {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+div.pagebox-item {
+    float: left;
+    margin: 0;
+    width: 1.5em;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #000
+}
+
+.current {
+    background-color: #E2E2E2;
+}
+
+div.pagebox-item:hover {
+    background-color: #D3D3D3;
+}
+
+a.pagebox-item {
+    display: block;
+}
+
+.back-to-top {
+    box-sizing: border-box;
+    float: right;
+    position: fixed;
+    bottom: 4%;
+    right: 6%;
+    z-index: 1050;
+    cursor: pointer;
+    display: none
+}
+
+.hr-footer {
+    margin: 3em auto 0;
+}
+
+.footer {
+    height: 4em;
+    font-size: 1em;
+}
+
+.footer-content {
+    height: 4em;
+    margin: 1em auto 0;
+    padding: 0.4em 0;
+}
+
+.content-body-post-list nav {
+    margin-bottom: 2em;
+}
+
+ul.tag {
+    margin: 0;
+    margin-bottom: 0.7em;
+    padding: 0
+}
+
+li.tag {
+    list-style-type: circle;
+    margin: 0.8em 0 0.5em 2.5em;
+}
+
+h3.tag  {
+    display: inline;
+}
+
+h2.tag  {
+    display: inline;
+}
+
+nav.about {
+    margin: 0;
+    padding: 0
+}
+
+li.about {
+    list-style-type: circle;
+    margin: 0.8em 0 1em 2.5em;
+    font-size: 0.88em;
+}
+
+h1.about {
+    display: inline;
+}
+
+h3.about {
+    display: inline;
+} 
+
+p.about {
+    display: inline;
+}
+
+.about-divide {
+    margin: 0.5em 0 1.4em;
+    width: 178px
+}
+
+@media screen and (min-width: 720px) and (max-width: 800px) {
+    .nav-intro {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    hr {
+        width: 96%
+    }
+    .header-content {
+        width: 95%;
+    }
+    .content-body {
+        width: 95%;
+    }
+    .nav-intro {
+        display: none;
+    }
+    .nav-list {
+        float: right;
+        width: 50%;
+        position: relative;
+        left: 0.5em;
+        bottom: 1em;
+    }
+
+}
